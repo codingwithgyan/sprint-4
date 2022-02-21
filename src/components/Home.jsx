@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from "../logo.png";
 export function Home()
 {
     const [search,setSearch]=useState("");
@@ -8,7 +8,7 @@ export function Home()
             window.location.href=`/search?q=${search}`
     }
     return <div>
-                <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" height="100px" width="300px"/><br/><br/>
+                <img src={logo} height="100px" width="300px"/><br/><br/>
                 <input onKeyPress={(e)=>{
                     
                     if(e.key=="Enter")
