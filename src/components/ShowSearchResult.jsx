@@ -38,7 +38,7 @@ export function ShowSearchResult()
     
     return <div id="search-result" style={{padding:"60px"}}>
                 <button onClick={()=>{
-                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=description&_order=asc`).then(res=>res).then(({data})=>{
+                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=description&_order=ASC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
@@ -46,7 +46,7 @@ export function ShowSearchResult()
                     })
                 }} id="sort-alphabetically">sort-alphabetically</button>
                 <button onClick={()=>{
-                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=description&_order=desc`).then(res=>res).then(({data})=>{
+                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=description&_order=DESC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
@@ -56,7 +56,7 @@ export function ShowSearchResult()
                 }} id="sort-alphabetically-desc">sort-alphabetically-desc</button>
 
                 <button onClick={()=>{
-                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=creation_date&_order=asc`).then(res=>res).then(({data})=>{
+                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=creation_date&_order=ASC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
@@ -64,7 +64,7 @@ export function ShowSearchResult()
                     })
                 }} id="sort-by-date">sort-by-date</button>
                 <button onClick={()=>{
-                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=creation_date&_order=desc`).then(res=>res).then(({data})=>{
+                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=creation_date&_order=DESC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
@@ -76,7 +76,7 @@ export function ShowSearchResult()
 
 
 <button onClick={()=>{
-                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=quality&_order=asc`).then(res=>res).then(({data})=>{
+                         axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=quality&_order=ASC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
@@ -84,7 +84,7 @@ export function ShowSearchResult()
                     })
                 }} id="sort-by-quality">sort-by-quality</button>
                 <button onClick={()=>{
-                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=quality&_order=desc`).then(res=>res).then(({data})=>{
+                     axios.get(`https://fast-reef-22226.herokuapp.com/data?_sort=quality&_order=DESC`).then(res=>res).then(({data})=>{
                             // console.log(data);
                             setMainData(data);
                     }).catch((e)=>{
