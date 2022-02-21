@@ -7,7 +7,7 @@ export function Navbar()
    const {search,changeSearchText}= useContext(Context);
   
     return <div id="navbar">
-                 <input value={search} onKeyPress={(e)=>{
+                 <input onKeyPress={(e)=>{
                     if(e.key=="Enter")
                     {
                         changeSearchText(temp);

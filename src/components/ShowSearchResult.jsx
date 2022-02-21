@@ -8,7 +8,7 @@ export function ShowSearchResult()
 {
     const [mainData,setMainData]=useState([]);
     const {search,changeSearchText}= useContext(Context);
-    console.log(useParams());
+    // console.log(useParams());
     useEffect(()=>{
         
         fetchData();
